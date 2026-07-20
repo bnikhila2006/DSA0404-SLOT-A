@@ -1,0 +1,9 @@
+Product_Name,Price
+Laptop,50000
+Mobile,25000
+Laptop,50000
+Tablet,20000
+Mobile,25000
+Headphones,5000
+Smart Watch,15000
+Laptop,50000
