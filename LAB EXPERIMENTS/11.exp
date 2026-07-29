@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+
+# Monthly sales data
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+sales = [12000, 15000, 18000, 17000, 20000, 22000]
+
+# Create figure
+plt.figure(figsize=(15,4))
+
+# 1. Line Plot
+plt.subplot(1,3,1)
+plt.plot(months, sales, marker='o')
+plt.title("Line Plot")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+
+# 2. Scatter Plot
+plt.subplot(1,3,2)
+plt.scatter(months, sales)
+plt.title("Scatter Plot")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+
+# 3. Bar Plot
+plt.subplot(1,3,3)
+plt.bar(months, sales)
+plt.title("Bar Plot")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+
+# Display all plots
+plt.tight_layout()
+plt.show()
