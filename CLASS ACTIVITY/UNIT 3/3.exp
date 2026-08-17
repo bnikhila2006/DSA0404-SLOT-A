@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+# House prices
+prices = [20,22,25,27,30,32,35,40,45,50,55,60,65,70,150]
+
+# Histogram
+plt.hist(prices, bins=5)
+plt.title("Histogram of House Prices")
+plt.xlabel("House Prices")
+plt.ylabel("Frequency")
+plt.show()
+
+print("The distribution is positively (right) skewed because of the high value 150.")

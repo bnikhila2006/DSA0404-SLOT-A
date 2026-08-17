@@ -1,0 +1,27 @@
+# Import pandas
+import pandas as pd
+
+# Load the employee dataset
+# Replace 'employee.csv' with your dataset file name
+df = pd.read_csv("emp.txt")
+
+# Display the dataset
+print("Employee Dataset:\n")
+print(df)
+
+# Number of rows and columns
+print("\nDataset Shape:")
+print("Number of Rows:", df.shape[0])
+print("Number of Columns:", df.shape[1])
+
+# Data types of each column
+print("\nData Types:")
+print(df.dtypes)
+
+# Missing values in each column
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+# Statistical summary
+print("\nStatistical Summary:")
+print(df.describe(include='all'))

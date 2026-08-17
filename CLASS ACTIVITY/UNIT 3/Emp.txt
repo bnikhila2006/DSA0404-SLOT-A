@@ -1,0 +1,6 @@
+EmpID,Name,Age,Salary,Department
+101,Ram,25,30000,HR
+102,Anu,28,35000,IT
+103,Ravi,30,40000,Sales
+104,Priya,27,45000,Finance
+105,Kiran,29,50000,Marketing

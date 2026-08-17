@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Sales data
+sales = [100,120,130,140,150,160,170,180,1000]
+
+df = pd.DataFrame({'Sales': sales})
+
+Q1 = df['Sales'].quantile(0.25)
+Q3 = df['Sales'].quantile(0.75)
+IQR = Q3 - Q1
+
+lower = Q1 - 1.5 * IQR
+upper = Q3 + 1.5 * IQR
+
+clean_data = df[(df['Sales'] >= lower) & (df['Sales'] <= upper)]
+
+print("Original Dataset:")
+print(df)
+
+print("\nCleaned Dataset:")
+print(clean_data)

@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+# Salary data
+salary = [25000,27000,30000,32000,35000,37000,40000,42000,100000]
+
+# Box plot
+plt.boxplot(salary)
+plt.title("Salary Box Plot")
+plt.ylabel("Salary")
+plt.show()
+
+print("The value 100000 is an outlier.")

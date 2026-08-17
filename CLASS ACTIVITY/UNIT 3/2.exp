@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Student grades
+grades = ['A', 'B', 'A', 'C', 'B', 'A', 'D', 'B', 'C', 'A', 'B']
+
+# Create DataFrame
+df = pd.DataFrame({'Grade': grades})
+
+# Frequency distribution
+freq = df['Grade'].value_counts()
+
+print("Frequency Distribution:")
+print(freq)
+
+# Bar chart
+plt.bar(freq.index, freq.values)
+plt.title("Frequency Distribution of Grades")
+plt.xlabel("Grades")
+plt.ylabel("Frequency")
+plt.show()
